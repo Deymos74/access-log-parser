@@ -11,16 +11,16 @@ public class Main {
         int number2 = new Scanner(System.in).nextInt();
 
         int raznost = number - number2;
-        System.out.println(raznost);
+        System.out.println("Разность: " + raznost);
 
         int sum = number2 + number;
-        System.out.println(sum);
+        System.out.println("Сумма: " + sum);
 
         int multiplication = number * number2;
-        System.out.println(multiplication);
+        System.out.println("Произведение: " + multiplication);
 
         double quotient = (double) number / number2;
-        System.out.println(quotient);
+        System.out.println("Частное: " + quotient);
 
     }
 }
