@@ -20,7 +20,7 @@ public class Main {
                 System.out.println("Это файл номер " + count + "\n");
             }
             else {
-                System.out.println("Путь указан неверное, повторите попытку!");
+                System.out.println("Путь указан неверно, повторите попытку!");
 
             }
             continue;
