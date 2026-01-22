@@ -1,26 +1,31 @@
 package com.stepup;
 
+
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Введите число:");
-        int number = new Scanner(System.in).nextInt();
+        int count = 0;
+        while(true){
+            System.out.println("Введите путь к файлу");
+            String path = new Scanner(System.in).nextLine();
 
-        System.out.println("Введите число 2:");
-        int number2 = new Scanner(System.in).nextInt();
+            File file = new File(path);
+            boolean fileExists = file.exists();
+            boolean isIsDirectory = file.isDirectory();
+            if(fileExists!=isIsDirectory) {
+                System.out.println("Путь указан верно");
+                count++;
+                System.out.println("Это файл номер " + count);
+            }
+            else {
+                System.out.println("False");
+                continue;
+            }
 
-        int raznost = number - number2;
-        System.out.println("Разность: " + raznost);
 
-        int sum = number2 + number;
-        System.out.println("Сумма: " + sum);
-
-        int multiplication = number * number2;
-        System.out.println("Произведение: " + multiplication);
-
-        double quotient = (double) number / number2;
-        System.out.println("Частное: " + quotient);
-
+        }
     }
+
 }
