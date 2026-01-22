@@ -17,13 +17,13 @@ public class Main {
             if(fileExists!=isIsDirectory) {
                 System.out.println("Путь указан верно");
                 count++;
-                System.out.println("Это файл номер " + count);
+                System.out.println("Это файл номер " + count + "\n");
             }
             else {
-                System.out.println("False");
-                continue;
-            }
+                System.out.println("Путь указан неверное, повторите попытку!");
 
+            }
+            continue;
 
         }
     }
